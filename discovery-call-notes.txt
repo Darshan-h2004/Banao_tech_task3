@@ -1,0 +1,140 @@
+DISCOVERY CALL NOTES - CERAMIC TILES CLIENT
+First call with the client. Nothing has been proposed to them yet.
+
+Client attendees:
+  - Head of IT & OT Procurement
+  - Special Projects Lead, Procurement (did most of the talking)
+
+How these notes were made: transcribed from the call recording. Our side's
+introductions, pitch and comments are removed. Our questions are kept as "Q:".
+The client's words are lightly cleaned up for transcription errors and are
+otherwise as said. Where the recording is unclear, it says so.
+
+------------------------------------------------------------------------------
+
+HEAD OF IT & OT PROCUREMENT (before the requirement):
+"Apart from software, have you worked with vendors on deployments at
+manufacturing sites, where you have to use hardware? Do you partner with OEMs
+or something like that?"
+
+SPECIAL PROJECTS LEAD:
+"The requirement here is simple. This probably falls under something like
+video analytics or vision analytics. First, a brief about the manufacturing
+process.
+
+We are one of the top producers of ceramic tiles in the world by volume. We
+have customers in 190 countries. Our main manufacturing units are in the UAE,
+India and Bangladesh.
+
+Tiles need a finished print on top. We use a digital printing machine that
+prints patterns and colours over the tile, and then we cure it in the kiln,
+which is the usual ceramic process.
+
+Our team's requirement is to verify that print. Is it the same shade that was
+decided when the product was first introduced, the master tile for that
+version? How closely does the current production batch match that shade, and
+what should I change so that it matches the parent tile?
+
+At the moment the digital printer prints from an image reference. If they find
+the brown is a little lighter, they increase it by 5%. They do manual
+iterations and it takes time to get the right variant for the printer. The same
+image reference for the master tile does not work every time. They have to do
+small tweaks, which wastes a lot of time and costs us production, because the
+lines run continuously. They change the reference, send it to the lab, compare,
+and try to correct it. By the time they put it on the line, around
+5,000-10,000 m2 [recording unclear on the exact figure] of tiles have already
+been produced in the wrong shade. So we want to reduce that rejected batch and
+the cycle time. The teams have mapped roughly 6 to 7 hours to get a colour
+correction right, and ideally it should take 5 to 6 minutes."
+
+Q: After printing, is there any post-processing that changes the colour?
+
+"You will have gathered from the problem statement that we are still working out
+what the solution could be. One idea is that you take my master tile as the
+reference, take the current production tile, and compare the difference in
+colour profile. Or it could be some other solution your team comes up with. I
+don't think saturation and hue are enough. We need to go deeper, LAB values or
+something like that."
+
+[Shares the process flow prepared by their technical team]
+
+"We have fixed SKUs. When I know my production target, the digital printing
+system holds a reference: the sample used in the previous production run, and
+the master sample. They produce one sample and check it manually in the lab. Is
+my shade OK? If it is, we run the whole batch. If not, they make changes to
+that image file, in Adobe Photoshop. There are 6 primary colours. They raise
+the brown percentage, say, and make 6 or 7 variants. They print those on tiles
+again, sample them and re-fire them. One round of this takes 6 to 7 hours. If
+we still don't have the same shade, we repeat the cycle until we get a perfect
+match.
+
+The second issue is that shade matching is visual. Different people see
+different variations and pick different points to change. So I don't always
+get the result I should be getting."
+
+Q: What does firing involve?
+
+"Once the glaze is on the tile, it has to be cured in the kiln to make it
+permanent. Before that the tile is a raw product that still holds moisture, like
+a clay model, so we heat it to harden it." (Print, fire, then check the sample.)
+
+Q: Could firing be one of the reasons the shade changes?
+
+"There could be several reasons. We are also asking the teams to look into that,
+but it is not our concern right now. The fix they use today is this: when they
+see a shade variation, they change the printer's reference image. It's a normal
+printing machine, it just prints on tiles. So they edit the reference image,
+reduce some colours or make whatever change they want. If it works, fine. If it
+doesn't, they try again.
+
+Sometimes it is 99% matching the master tile and they let it go, but that
+really shouldn't happen. And because of all these iterations, if I fixed a
+sample in 2021, the reference I'm using in production now could be way off,
+because it is very old.
+
+What my team expects is a system that compares the master tile with the current
+production tile, works out the colour difference, and then suggests changes to
+my input to the digital printer, so that this whole lab-testing loop goes away.
+Where we want it and how we want it, you figure that out."
+
+"On the technical side, the team talks about delta L, delta a, delta b and
+delta gloss. So it's not only colour. We also need gloss, which is how shiny the
+tile is. I'm not sure if that counts as video analytics. Right now they have
+standard lab devices, not production grade, such as a spectrophotometer. Those
+don't need the same lighting conditions. They measure a small area of the tile
+and give a result in the lab showing how much variation there is: delta L,
+delta a and delta b against the reference tile. But they still don't know how
+much to change the input file to the digital printer.
+
+That's the requirement. That's all I can tell you for now. Please ask if you
+have any questions."
+
+"It would be better if you could arrange a visit to the site, or send someone
+if you have partners in the UAE who can visit."
+
+"The solution the teams have in mind right now is to edit the printer's
+reference file. Ideally, though, the solution would find the process gap, the
+root cause of the shade variation. I don't think that's realistic, because even
+tiny changes in the raw material, or 30 seconds or a minute more in the kiln,
+can give a darker shade. That's a much more complicated area."
+
+"If you want, we can send you a sample of the standard master tile and some
+reference variation tiles. What I need is for you to propose a solution and
+show that it can be done: what the difference is between the master tile and
+the test tile, and how much I should change my input file so that it matches.
+That would solve the problem for now.
+
+It doesn't have to run all the time on the continuous line. We've seen that
+once I correct my file for a batch, if the first sample of that batch is right,
+the whole batch is processed fine. The problem comes when I change batch."
+
+"If you have case studies from similar Indian manufacturing setups, please share
+them for our reference. And if you can add more value on top of this, suggest
+it."
+
+"The document we sent you is the closest thing we have to a process flow, so
+you'll have to work with that. [Not available to you.] Think of it as just a
+printing machine. Instead of paper, we're printing on tiles."
+
+------------------------------------------------------------------------------
+End of notes.
